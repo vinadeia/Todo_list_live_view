@@ -1,19 +1,30 @@
-# LiveViewTodo
+# Todo List - Live View
+  
+ Aplicativo de tarefas simples desenvolvido na linguagem Elixir, desafio do site [Mentor Frontend](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW)
 
-To start your Phoenix server:
+- Adicionar novas tarefas à lista
+- Marcar tarefas concluídas
+- Excluir tarefas da lista
+- Filtrar por todos/ativos/completos
+- Limpar apenas as tarefas concluídas
+- Alternar o modo claro e escuro
+- Versão mobile e desktop
+  
+![screenshot](https://github.com/vinadeia/todo_list_live_view/blob/docs/docs/screenshot.jpg?raw=true)
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+## Pré-requisitos
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+  * PostgreSQL 10.22: [`Download`](https://www.postgresql.org/download/windows/)
+  * Elixir 1.14.0: [`Download`](https://elixir-lang.org/install.html)
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## Instalação:
 
-## Learn more
+  * Instale as dependencias com `mix deps.get`
+  * No arquivo `/config/dev.exs` configure o username e password do seu banco
+  * Crie e migre o banco de dados com o comando `mix ecto.setup`
+  
+## Como rodar:
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+* Inicie a aplicação com `mix phx.server`
+
+Acesse a aplicação na porta 4000: [`localhost:4000`](http://localhost:4000) no seu browser
