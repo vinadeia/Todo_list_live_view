@@ -13,7 +13,7 @@ defmodule LiveViewTodo.TodosFixtures do
       |> Enum.into(%{
         person_id: 42,
         status: 42,
-        title: "some title"
+        text: "some title"
       })
       |> LiveViewTodo.Todo.create_todo()
 

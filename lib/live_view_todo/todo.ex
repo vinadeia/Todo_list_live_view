@@ -48,9 +48,9 @@ defmodule LiveViewTodo.Todo do
     |> Repo.update()
   end
 
-  # def change_todo(%Todo{} = todo, attrs \\ %{}) do
-  #   Todo.changeset(todo, attrs)
-  # end
+  def change_todo(%Todo{} = todo, attrs \\ %{}) do
+    Todo.changeset(todo, attrs)
+  end
 
   def clear_completed() do
     completed_todos = from(i in Todo, where: i.status == 1)
