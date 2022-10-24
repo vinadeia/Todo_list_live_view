@@ -28,3 +28,8 @@
 * Inicie a aplicação com `mix phx.server`
 
 Acesse a aplicação na porta 4000: [`localhost:4000`](http://localhost:4000) no seu browser
+
+## Testes automáticos
+
+* No arquivo `/config/text.exs` configure o username e password do seu banco
+* Inicie o teste com `mix test`
