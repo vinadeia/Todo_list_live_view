@@ -11,10 +11,11 @@ defmodule LiveViewTodo.TodosFixtures do
     {:ok, todo} =
       attrs
       |> Enum.into(%{
-        done: true,
-        title: "some title"
+        person_id: 42,
+        status: 42,
+        text: "some title"
       })
-      |> LiveViewTodo.Todos.create_todo()
+      |> LiveViewTodo.Todo.create_todo()
 
     todo
   end

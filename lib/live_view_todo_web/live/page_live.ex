@@ -63,12 +63,10 @@ defmodule LiveViewTodoWeb.PageLive do
     todos = Todo.list_todos()
 
     case params["filter_by"] do
-      "completed" ->
-        completed = Enum.filter(todos, &(&1.status == 1))
+      "completed" -> completed = Enum.filter(todos, &(&1.status == 1))
         {:noreply, assign(socket, todos: completed)}
 
-      "active" ->
-        active = Enum.filter(todos, &(&1.status == 0))
+      "active" -> active = Enum.filter(todos, &(&1.status == 0))
         {:noreply, assign(socket, todos: active)}
 
       _ ->
